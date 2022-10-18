@@ -22,9 +22,11 @@ def chatbot():
         ints = predict_class(message)
         response = get_response(ints, intents)
         # answer_list.clear()
-        if len(answer_list)>4:
+        if len(answer_list)>=3:
           # answer_list.remove(answer_list[0])
-          answer_list.pop(0)
+          # answer_list.pop(0)
+          answer_list = answer_list[1:]
+          # del answer_list[-1]
         answer_list.append(response)
         print(answer_list)
         # return render_template("chatbot.html", message=message, answer_list=answer_list, delay=delay)
