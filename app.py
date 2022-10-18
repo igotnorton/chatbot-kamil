@@ -17,11 +17,12 @@ def home():
 
 @app.route("/chatbot", methods=["GET", "POST"])
 def chatbot():
-    global answer_list, delay
+    global answer_list
     if request.method == "POST":
         message = request.form['message']
         ints = predict_class(message)
         response = get_response(ints, intents)
+        answer_list.clear()
         answer_list.append(response)
         print(answer_list)
         # if len(answer_list) > 5:
