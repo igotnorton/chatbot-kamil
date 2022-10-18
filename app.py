@@ -24,8 +24,8 @@ def chatbot():
         response = get_response(ints, intents)
         answer_list.append(response)
         print(answer_list)
-        if len(answer_list) > 4:
-            answer_list.remove(answer_list[0])
+        # if len(answer_list) > 5:
+        #     answer_list.remove(answer_list[0])
         return render_template("chatbot.html", message=message, answer_list=answer_list, delay=delay)
     return render_template("chatbot.html", message="", answer_list=answer_list)
 
