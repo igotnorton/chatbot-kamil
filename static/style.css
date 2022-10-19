@@ -115,6 +115,7 @@ header {
   display: flex;
   align-items: center;
   flex-direction: column;
+
   padding: 8px;
   min-width: 464px;
   width: 70%;
@@ -160,7 +161,14 @@ ul {
   width: 100%;
 } */
 
-
+#part-1 {
+  /* display: flex; */
+  min-height:120px;
+}
+#part-2 {
+  /* display: flex; */
+  min-height:430px;
+}
 
 #text-0 {
   /* display: flex;
