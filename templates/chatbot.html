@@ -30,7 +30,7 @@
                 <div id="text-4">Chatbot says...</div>
                 
                 {% for answer in answer_list %}
-                <div id="text-0">{{answer}}</div>
+                <ul><li><div id="text-0">{{answer}}</div></li></ul>
                 {% endfor %}
             </div>
         </div>
@@ -38,3 +38,7 @@
     {% endblock %}
   </body>
 </html>
+
+
+<!-- <ul><li>{{answer}}</li></ul> -->
+<!-- <div id="text-0">{{answer}}</div> -->
