@@ -37,3 +37,4 @@ if __name__ == "__main__":
       # answer_list = answer_list[1:]
       # answer_list.clear()
       # answer_list.remove(answer_list[0])
+      # answer_list.pop(0)
