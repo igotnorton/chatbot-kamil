@@ -6,7 +6,7 @@ from time import sleep
 app = Flask(__name__)
 app.config['SECRET__KEY'] = 'a_very_secretive_key_123456789'
 answer_list = []
-delay = sleep(0.1)
+delay = sleep(1)
 
 @app.route("/")
 def home():
@@ -27,8 +27,6 @@ def chatbot():
     print(answer_list)
   return render_template("chatbot.html", message="", answer_list=answer_list, delay=delay)
 
-# if __name__ == "__main__":
-#     app.run(debug=True)
 if __name__ == "__main__":
   app.debug = True
   app.run()
